@@ -1,0 +1,189 @@
+/*Add padding and margin to space out the page.
+Make the font larger too.*/
+body{
+	font-family: 'Outfit', sans-serif;
+	/* margin:1%; */
+	/* padding:1%; */
+	font-size:150%;
+}
+
+a.skip{
+	background: white;
+	padding: 6px;
+	-webkit-transition: top 1s ease-out;
+	transition: left 1s ease-out;
+	z-index: 1;
+	/* Requirement 3 code here*/
+	margin: 0 0 0 -500px;
+}
+
+a.skip:focus{
+	margin: 0 0 0 0;
+}
+
+.introduction{
+	color: white;
+	background-image: url('../images/sky1.JPG');
+	background-color: #707070;
+	min-height: 400px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#logo {
+    /* width: 475px; */
+	max-width:10%;
+    height:auto;
+    animation: mymove 5s;
+}
+
+@keyframes mymove {
+    /* 0%   {width: 25px; opacity: 0;}
+    100% {width: 475px; opacity: 1;} */
+	0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+/*#background {
+	background-image:url("../images/sky1copy.JPG");
+	background-size: cover;
+}*/
+
+/*Make the h1 heading bigger with a bold font*/
+h1{
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.active{
+	/*background: white;*/
+	/*background-color: rgba(255, 255, 255, 0.2);*/
+    text-transform: uppercase;
+	text-align: center;
+    margin: 5px;
+	/* border: 1.5px solid rgb(120, 201, 238); */
+	border: 1.5px solid rgb(0, 128, 187);
+	background-color: rgb(255, 255, 255);
+}
+
+
+/*Style the images*/
+img{
+    height: 200px;
+    width: auto;
+    /*border: 3px solid blue;*/
+    padding: 25px;
+    margin: 10px;
+	border: 1.5px solid rgb(255, 255, 255);
+	border-radius: 1px;
+	/* transition-property: box-shadow, border;
+	transition-timing-function: ease-out;
+  	transition-duration: 500ms; */
+	/* transition-delay: 250ms; */
+	transition: all 400ms ease-out 0.2s;
+}
+
+/*Make the h2 heading match h1*/
+h2{
+	font-size: 2em; 
+	font-weight: bold;
+	
+}
+
+/*Improve the spacing for paragraphs AND headings*/
+p, h1, h2 {
+    padding: 10px;
+	line-height: 1.5;
+}
+
+/*Add borders around the main components and some
+space too*/
+header, nav, main, h1, footer{
+	/*border: 2px solid grey;*/
+	margin: 10px 0;
+}
+
+/*Change the styling for all of the list 
+items in the nav section*/
+nav li{
+	color: black;
+	/*background-color: #ECFF4D;*/
+	padding:10px;
+	width:25%;
+	/*border:1px solid black;*/
+	display: inline-block;
+	width: 20%;
+	background-color: rgb(210, 241, 255);
+}
+
+nav li a{
+	text-decoration: none;
+}
+
+/*Added this so the links stay the same color*/
+a:visited{
+	color:black}
+
+li{
+	text-align: center;
+}
+
+ul{
+	text-align: center
+}
+
+a{
+	color:black
+}
+
+img:hover:nth-child(2n+1){
+	/* filter: drop-shadow(0 0 1rem rgb(184, 184, 184)); */
+	/* transform: scale(1.05); */
+	/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+	box-shadow: 10px 10px 0px rgb(175, 226, 255);
+	border: 3px solid rgb(67, 138, 243);
+}
+
+img:hover:nth-child(2n){
+	/* filter: drop-shadow(0 0 1rem rgb(184, 184, 184)); */
+	/* transform: scale(1.05); */
+	/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+	box-shadow: 10px 10px 0px rgb(255, 253, 143);
+	border: 3px solid rgb(243, 167, 67);
+}
+
+
+
+.active a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: rgb(0, 128, 187);
+	font-weight: bolder;
+}
+
+
+input[type=submit] {
+	/* background-color: #38803C; */
+	background-color: #125dce;
+	color: white;
+	padding: 14px 20px;
+	/* margin: 8px 0; */
+	border: none;
+	cursor: pointer;
+	/* width: 100%; */
+	width:10%;
+}
+
+input {
+	width: 50%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+
+
