@@ -28,6 +28,8 @@
 <body>
 	<a class="skip" href='#main'>Skip to Main</a>
 	<header>
+		<div class="headergrid">
+		<img src="images/logo.png" alt="This is a logo" id = "logo">
 		<nav>
 			<ul>
 				<li><a href="index.html">Home</a></li>
@@ -36,40 +38,48 @@
 				<li class="active"><a href="aboutme.html">About me</a></li>
 			</ul>
 		</nav>
+		</div>
 		<h1>About me</h1>
 	</header>
 
 
 	<main id='main'>
-		<p>I am a graduate student in The University of Michigan, and I hope to become
+		<div class="containergrid">
+		<p class="ingridparagraph">I am a graduate student in The University of Michigan, and I hope to become
 			a designer in the future. Photography is one of my hobbies. I am not professional,
 			but I enjoy the process very much. My current device is a Canon 5D4, and I'm working
 			on it silently because there's a lot to learn. If you have any suggestions for me
-			to improve my skills, you are very welcome to contact me.</p>
-		<p>Hopefully I can take better pictures in the future. If you have any suggestions,
+			to improve my skills, you are very welcome to contact me. Hopefully I can take better pictures in the future. If you have any suggestions,
 			you are welcome to contact me! I also welcome people to come and learn photography together with me.
 			I hope to meet more people who like photography in the future to communicate and share experiences.</p>
 		<div>
-			<img src="images/aboutme.jpg" alt="A photo of Minjie wearing a black hat in Sichuan Jiuzhaigou, China, 2021"
+			<img id='backprofile'src="images/aboutme.jpg" alt="A photo of Minjie wearing a black hat in Sichuan Jiuzhaigou, China, 2021"
 				width="200" />
+		</div>
 		</div>
 
 		<form action="#" method = "post">
 			<fieldset>
-				<legend>Contact me:</legend>
+				<legend>Contact me:</legend><br>
 				<label for="name">
 					<i class="fa-solid fa-user"></i>
 					Name:</label>
-				<input type="text" id = "name" value = "enter your name"><br/>
+				<input type="text" id = "name" value = "your name"><br/>
+
+				<label for="tel">
+					<i class="fa-solid fa-phone"></i>
+					Tel:</label>
+				<input type="text" id = "tel" value = "your number"><br/>
+
 				<label>
 					<i class="fa-solid fa-envelope"></i>
 					Email:
-					<input type="email" value = "enter your email">
+					<input type="email" value = "your email">
 				</label><br/>
 				<label for="message">
 					<i class="fa-solid fa-message"></i>
 					Message:</label>
-				<input type="text" id = "message"><br>
+				<input type="text" id = "message" value = "your message"><br>
 				<input type = "submit" value = "Save!">
 			</fieldset>
 		</form>
